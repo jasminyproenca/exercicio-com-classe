@@ -1,0 +1,24 @@
+{
+  "name": "exercicio-com-classe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasminyproenca/exercicio-com-classe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jasminyproenca/exercicio-com-classe/issues"
+  },
+  "homepage": "https://github.com/jasminyproenca/exercicio-com-classe#readme",
+  "dependencies": {
+    "mocha": "^11.7.6"
+  }
+}
