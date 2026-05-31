@@ -23,7 +23,7 @@ class Pagamento {
     #listaDePagamentos // Propriedade Privada
 
     constructor() { // Primeiro método a ser executado quando usar a Classe
-        this.listaDePagamentos = []; // Inicializa a lista de pagamentos
+        this.#listaDePagamentos = []; // Inicializa a lista de pagamentos
     }
 
     realizarPagamento(codigoDeBarras, empresa, valor) { // Métodos públicos para manipular os dados da Classe
@@ -40,11 +40,11 @@ class Pagamento {
             valor,
             categoria,
         };
-        this.listaDePagamentos.push(pagamento); // Adiciona o pagamento à lista de pagamentos
+        this.#listaDePagamentos.push(pagamento); // Adiciona o pagamento à lista de pagamentos
     }
 
     consultarUltimoPagamento() { // Método para consultar o último pagamento
-        return this.listaDePagamentos[this.listaDePagamentos.length - 1]; // Retorna o último pagamento
+        return this.#listaDePagamentos.at(-1); // Retorna o último pagamento
     }
 }
 
