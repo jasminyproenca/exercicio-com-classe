@@ -58,3 +58,19 @@ npm test
 ```
 
 Após a execução, o relatório interativo estará disponível no diretório `mochawesome-report/mochawesome.html`.
+
+---
+
+## 🔄 Integração Contínua (CI) com CircleCI
+
+O projeto está configurado para executar a esteira de Integração Contínua (CI) automaticamente no **CircleCI** a cada novo commit/pull request enviado ao repositório.
+
+O arquivo de configuração está localizado em [.circleci/config.yml](file:///c:/projetos/exercicio-com-classe/.circleci/config.yml).
+
+### Etapas executadas na pipeline:
+1. **Checkout**: Obtém a versão mais recente do código.
+2. **Restaurar Cache**: Recupera as dependências salvas de execuções anteriores para otimizar o tempo de execução.
+3. **Instalar Dependências**: Instala os pacotes necessários (`npm install`).
+4. **Salvar Cache**: Armazena as novas dependências instaladas.
+5. **Executar Testes**: Executa a suíte de testes com o mocha (`npm test`).
+
