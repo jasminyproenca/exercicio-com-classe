@@ -74,3 +74,24 @@ O arquivo de configuração está localizado em [.circleci/config.yml](file:///c
 4. **Salvar Cache**: Armazena as novas dependências instaladas.
 5. **Executar Testes**: Executa a suíte de testes com o mocha (`npm test`).
 
+
+### Exercicio 1: Configuração do CircleCI
+Esta pipeline foi criada para atender o Exercicio 1 da Disciplina de Integração Contínua do curso de Pós graduação de Automação de Testes.
+Neste exercicio o professor João Vitor (Goku) solicitou a criação de uma pipeline de Integração Contínua (CI) utilizando uma ferramenta a nossa escolha, eu escolhi utilizar 
+o CircleCI pois é uma ferramenta simples de implementar e já possui integração com o github, facilitando o deploy e a execução dos testes.
+
+#### Objetivo: 
+- Criar uma pipeline de Integração Contínua (CI) no CircleCI para testar automaticamente o código a cada commit enviado ao repositório.
+
+#### Estrutura da Pipeline:
+- O arquivo de configuração está localizado em [.circleci/config.yml](file:///c:/projetos/exercicio-com-classe/.circleci/config.yml).
+
+#### Etapas executadas na pipeline:
+1. **Checkout**: Obtém a versão mais recente do código.
+2. **Restaurar Cache**: Recupera as dependências salvas de execuções anteriores para otimizar o tempo de execução.
+3. **Instalar Dependências**: Instala os pacotes necessários (`npm install`).
+4. **Salvar Cache**: Armazena as novas dependências instaladas.
+5. **Executar Testes**: Executa a suíte de testes com o mocha (`npm test`).
+
+#### Comentarios:
+- A pipeline roda automaticamente a cada commit enviado ao repositório.
