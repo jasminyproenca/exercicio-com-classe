@@ -22,7 +22,8 @@ jobs:
           name: Executar Testes Automatizados
           command: npm test
 
+# CI de Nível 01 - Disparo Manual através de clique
 workflows:
-  commit-workflow:
+  N1-Execucao-Manual:
     jobs:
       - build-and-test
